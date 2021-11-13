@@ -1,0 +1,20 @@
+@mixin text-style(){
+    font-family: $ff;
+    font-size: $fz;
+}
+@mixin button-style($b, $bg, $c, $fz, $pd){
+    border: $b;
+    background: $bg;
+    color: $c;
+    font-size: $fz;
+    padding: $pd;
+}
+@mixin bg-color($bg, $c){
+    background: $bg;
+    color: $c;
+}
+@mixin display-grid($d, $gtc, $gtr){
+    display: $d;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+}
