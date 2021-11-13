@@ -66,6 +66,12 @@ h1, h2 {
   color: white;
   font-size: 3vh;
   padding: 2% 4%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .header-bar .btn:hover {
+  background: white;
+  color: black;
 }
 
 .main .main--section {
@@ -113,25 +119,25 @@ h1, h2 {
 }
 .main .main--article > img:nth-of-type(3) {
   margin: 0 0 0 15%;
-  width: 27%;
+  width: 30%;
 }
 .main .main--article > img:nth-of-type(4) {
-  margin: 0 13% 0 auto;
-  width: 25%;
+  margin: 0 10% 0 auto;
+  width: 30%;
 }
 .main .main--article .text-container {
   width: 37%;
   margin: 0 auto;
 }
 .main .main--article .text-container h2 {
-  font-size: 8rem;
+  font-size: 14vh;
   line-height: 7rem;
   padding: 0 0 4% 0;
 }
 .main .main--article .text-container p {
   width: 93%;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
+  font-size: 2.5vh;
+  line-height: 5vh;
   font-family: Work Sans;
 }
 .main .main--article .image-text {
@@ -140,14 +146,15 @@ h1, h2 {
 }
 .main .main--article .image-text p {
   width: 45%;
-  padding: 0 0 0 10%;
+  padding: 0 0 0 8%;
   margin-top: 3%;
   font-size: 2.5vh;
   line-height: 5vh;
   font-family: Work Sans;
 }
 .main .main--article .image-text img {
-  width: 20%;
+  width: 24%;
+  height: 83%;
 }
 .main .main--article .last-image-container {
   text-align: center;
@@ -181,7 +188,7 @@ h1, h2 {
   line-height: 12.5vh;
 }
 .main .main--section--golden .div--golden div:nth-of-type(2) p {
-  font-family: Work Sans;
+  font-family: Larish-Semibold;
 }
 .main .main--section--golden .div--golden div:nth-of-type(2) p:nth-of-type(1) {
   width: 80%;
@@ -238,7 +245,7 @@ h1, h2 {
   padding: 0 0 5% 0;
 }
 .main .poppy--bear .div--poppy div:nth-of-type(2) p {
-  font-family: Work Sans;
+  font-family: Larish-Semibold;
 }
 .main .poppy--bear .div--poppy div:nth-of-type(2) p:nth-of-type(1) {
   width: 80%;
@@ -306,6 +313,12 @@ h1, h2 {
   color: white;
   font-size: 3vh;
   padding: 2% 4%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer .footer--section .btn:hover {
+  background: white;
+  color: black;
 }
 .footer .footer--section .icon--container {
   padding: 9% 0 1% 0;
