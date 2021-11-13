@@ -30,7 +30,7 @@ h1, h2{
         padding: 0 0 5% 0;
         img{
             width: 1px;
-            height:33vh;
+            height:31vh;
         }
     }
     p{
@@ -40,16 +40,16 @@ h1, h2{
             padding: 0 0 1% 0;
         }
         &:nth-of-type(2){
-            padding: 0 0 9% 0;
+            padding: 0 0 10% 0;
         }
     }
     h1{
-        font-size: 8rem;
-        line-height: 12vh;
+        font-size: 13vh;
         padding: 0 0 1% 0;
+        line-height: 12vh;
     }
     .outline{
-        font-size: 8rem;
+        font-size: 13vh;
         -webkit-text-stroke: 1px white;
         color: #000;
     }
@@ -74,10 +74,11 @@ h1, h2{
         >h2{
             font-size: 15vh;
             width: 80%;
+            padding: 0 0 5% 0 ;
         }
         .section--div{
             background: url(../img/map.svg) right no-repeat;
-            padding: 10% 1% 5% 0;
+            padding: 10% 1% 0% 0;
             p{
                 font-size: 2rem;
                 font-family: Work Sans;
@@ -343,10 +344,10 @@ h1, h2{
 
 @keyframes banner-animation{
     0%{
-        transform: rotate(42deg) translate(0, 155vh);
+        transform: rotate(42deg) translate(0, 175vh);
     }
     100%{
-        transform: rotate(42deg) translate(100vh,155vh);
+        transform: rotate(42deg) translate(100vh,175vh);
     }
 }
 
