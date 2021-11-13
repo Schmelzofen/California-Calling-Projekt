@@ -1,13 +1,15 @@
-@mixin text-style(){
+@mixin text-style($ff, $fz){
     font-family: $ff;
     font-size: $fz;
 }
-@mixin button-style($b, $bg, $c, $fz, $pd){
+@mixin button-style($b, $bg, $c, $fz, $pd, $cur, $t){
     border: $b;
     background: $bg;
     color: $c;
     font-size: $fz;
     padding: $pd;
+    cursor: $cur;
+    transition: $t;
 }
 @mixin bg-color($bg, $c){
     background: $bg;
@@ -17,4 +19,24 @@
     display: $d;
     grid-template-columns: $gtc;
     grid-template-rows: $gtr;
+}
+
+@mixin width-margin($w, $m){
+    width: $w;
+    margin: $m;
+}
+
+@mixin flex-direction($d,$fd){
+    display: $d;
+    flex-direction: $fd;
+}
+
+@mixin width-height($w,$h){
+    width: $w;
+    height: $h;
+}
+
+@mixin text-stroke($ts,$c){
+    -webkit-text-stroke: $ts;
+    color: $c;
 }
