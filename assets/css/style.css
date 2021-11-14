@@ -229,6 +229,7 @@ h1, h2 {
 }
 .main .poppy--bear .div--poppy {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 0 10% 0;
 }
 .main .poppy--bear .div--poppy div:nth-of-type(1) {
@@ -383,10 +384,6 @@ h1, h2 {
   .main .main--section--golden > p {
     padding: 5% 0 2% 0;
   }
-  .main .main--article .black-bar img {
-    padding: 0 9% 0 0;
-    width: 38%;
-  }
   .main .main--article .text-container h2 {
     line-height: normal;
     font-size: 12vh;
@@ -420,9 +417,6 @@ h1, h2 {
     top: -4%;
   }
 
-  .div--golden, .div--poppy {
-    flex-wrap: wrap;
-  }
   .div--golden h2, .div--poppy h2 {
     padding: 0 0 5% 0;
   }
@@ -443,6 +437,10 @@ h1, h2 {
   .footer .footer--section .icon--container img {
     width: 50px;
   }
+  .footer .footer--section .btn {
+    display: block;
+    margin: 0 auto;
+  }
   .footer .footer--section .footer--bar {
     align-items: baseline;
     padding: 0 0 5% 0;
@@ -457,24 +455,12 @@ h1, h2 {
     transform: translate(0, 155vh);
     top: 5vh;
     animation: banner-animation3 5s infinite linear alternate;
-    position: absolute;
-    font-family: Larish-Semibold;
   }
-  .footer .footer--section .banner-animation--container .banner-animation span:nth-of-type(odd) {
-    font-size: 10vh;
-    color: #000;
-  }
-  .footer .footer--section .banner-animation--container .banner-animation .outline-two {
-    -webkit-text-stroke: 1px black;
-    color: white;
+  .footer .footer--section .banner-animation--container .banner-animation span:nth-of-type(odd), .footer .footer--section .banner-animation--container .banner-animation .outline-two {
     font-size: 10vh;
   }
 }
 @media screen and (max-width: 414px) {
-  * {
-    font-size: 62.5%;
-  }
-
   .header h1 {
     font-size: 6vh;
     line-height: normal;
@@ -497,8 +483,7 @@ h1, h2 {
     width: 9.5vw;
   }
   .header .header-bar .btn {
-    padding: 2% 4%;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 
   .main .main--section {
@@ -508,12 +493,11 @@ h1, h2 {
   .main .main--section h2 {
     font-size: 3vh;
   }
-  .main .main--section .section--div {
-    text-align: left;
-    margin-right: 10%;
-  }
   .main .main--section .section--div h2 {
     font-size: 3vh;
+  }
+  .main .main--article {
+    text-align: center;
   }
   .main .main--article .black-bar {
     text-align: center;
@@ -527,19 +511,15 @@ h1, h2 {
   }
   .main .main--article .text-container h2 {
     font-size: 5vh;
-    text-align: center;
-    line-height: normal;
     padding: 6% 0 0 0;
   }
   .main .main--article .text-container p {
-    text-align: center;
     margin: auto;
     font-size: 2vh;
   }
   .main .main--article .image-text {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
   .main .main--article .image-text p {
     padding: 10px 10%;
@@ -589,10 +569,6 @@ h1, h2 {
   .main .poppy--bear {
     padding: 30% 0 0 6%;
   }
-  .main .poppy--bear > img {
-    right: -13%;
-    top: -4%;
-  }
   .main .poppy--bear .div--poppy {
     display: flex;
     flex-direction: column;
@@ -620,46 +596,23 @@ h1, h2 {
   .footer .footer--section h2 {
     padding: 0% 3% 10% 3%;
     text-align: center;
-    width: 100%;
     font-size: 3vh;
   }
   .footer .footer--section .btn {
-    display: block;
-    margin: 0 auto;
+    font-size: 1.5vh;
   }
   .footer .footer--section .footer--bar {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 0 5% 0;
   }
   .footer .footer--section .footer--bar .footer--bar--left p {
-    text-align: center;
     font-size: 2vh;
     padding: 10% 0;
   }
   .footer .footer--section .footer--bar--icons {
     padding: 0;
   }
-  .footer .footer--section .icon--container {
-    text-align: center;
-  }
-  .footer .footer--section .banner-animation--container .banner-animation {
-    background: #fff;
-    opacity: 0.9;
-    width: 5000px;
-    transform: translate(0, 155vh);
-    top: 5vh;
-    animation: banner-animation2 10s infinite linear alternate;
-    position: absolute;
-    font-family: Larish-Semibold;
-  }
-  .footer .footer--section .banner-animation--container .banner-animation span:nth-of-type(odd) {
-    font-size: 5vh;
-    color: #000;
-  }
-  .footer .footer--section .banner-animation--container .banner-animation .outline-two {
-    -webkit-text-stroke: 1px black;
-    color: white;
+  .footer .footer--section .banner-animation--container .banner-animation span:nth-of-type(odd), .footer .footer--section .banner-animation--container .banner-animation .outline-two {
     font-size: 5vh;
   }
 }
