@@ -391,6 +391,7 @@ h1, h2 {
 
   .main .main--section {
     text-align: left;
+    padding: 11% 0 0 6%;
   }
   .main .main--section h2 {
     font-size: 3vh;
@@ -416,10 +417,12 @@ h1, h2 {
     font-size: 5vh;
     text-align: center;
     line-height: normal;
+    padding: 6% 0 0 0;
   }
   .main .main--article .text-container p {
     text-align: center;
     margin: auto;
+    font-size: 2vh;
   }
   .main .main--article .image-text {
     display: flex;
@@ -429,6 +432,7 @@ h1, h2 {
   .main .main--article .image-text p {
     padding: 10px 10%;
     width: 100%;
+    font-size: 2vh;
   }
   .main .main--article img:nth-of-type(1) {
     width: 50%;
@@ -451,6 +455,9 @@ h1, h2 {
   .main .main--article .last-image-container img {
     margin: auto;
   }
+  .main .main--section--golden {
+    padding: 0 0 0 6%;
+  }
   .main .main--section--golden .div--golden {
     display: flex;
     flex-direction: column;
@@ -458,9 +465,17 @@ h1, h2 {
   .main .main--section--golden .div--golden div:nth-of-type(1) h2 {
     line-height: normal;
     padding: 0 0 8% 0;
+    font-size: 5vh;
   }
   .main .main--section--golden .div--golden div:nth-of-type(2) p:nth-of-type(1) {
-    width: 98%;
+    width: 95%;
+    font-size: 3vh;
+  }
+  .main .main--section--golden .div--golden div:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 2vh;
+  }
+  .main .poppy--bear {
+    padding: 30% 0 0 6%;
   }
   .main .poppy--bear > img {
     right: -13%;
@@ -473,16 +488,21 @@ h1, h2 {
   .main .poppy--bear .div--poppy div:nth-of-type(1) h2 {
     line-height: normal;
     padding: 0 0 8% 0;
+    font-size: 5vh;
   }
   .main .poppy--bear .div--poppy div:nth-of-type(2) p:nth-of-type(1) {
-    width: 98%;
+    width: 95%;
+    font-size: 3vh;
+  }
+  .main .poppy--bear .div--poppy div:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 2vh;
   }
 
   .footer {
     padding: 0;
   }
   .footer .footer--section > p {
-    padding: 40% 0 3% 0;
+    padding: 30% 0 3% 0;
     text-align: center;
   }
   .footer .footer--section h2 {
@@ -498,7 +518,7 @@ h1, h2 {
   .footer .footer--section .footer--bar {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 0 70% 0;
+    padding: 0 0 5% 0;
   }
   .footer .footer--section .footer--bar .footer--bar--left p {
     text-align: center;
@@ -537,6 +557,95 @@ h1, h2 {
     100% {
       transform: translateX(-7%);
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .header-bar {
+    padding: 0 0 10% 0;
+  }
+
+  .header .line img {
+    height: 25vh;
+  }
+
+  .main .main--section h2 {
+    font-size: 6vh;
+  }
+  .main .main--section .section--div {
+    text-align: left;
+    margin-right: 10%;
+    padding: 5% 0;
+  }
+  .main .main--section .section--div h2 {
+    font-size: 3vh;
+  }
+  .main .main--article .black-bar img {
+    padding: 0 9% 0 0;
+    width: 38%;
+  }
+  .main .main--article .text-container h2 {
+    line-height: normal;
+    font-size: 12vh;
+  }
+  .main .main--article > img:nth-of-type(1) {
+    width: 30%;
+    margin: 5% 0 -18% 0%;
+  }
+  .main .main--article > img:nth-of-type(2) {
+    width: 31%;
+    margin: -158px 0 0 auto;
+  }
+  .main .main--article > img:nth-of-type(3) {
+    width: 38%;
+    margin: 0 0 0 4%;
+  }
+  .main .main--article > img:nth-of-type(4) {
+    width: 35%;
+    margin: 0 11% 0 auto;
+  }
+  .main .main--article .image-text img {
+    width: 47%;
+    height: 54%;
+  }
+  .main .main--article .last-image-container img {
+    width: 44%;
+    margin: 5% 0 0 6%;
+  }
+  .main .poppy--bear > img {
+    right: -13%;
+    top: -4%;
+  }
+
+  .div--golden, .div--poppy {
+    flex-wrap: wrap;
+  }
+  .div--golden h2, .div--poppy h2 {
+    padding: 0 0 5% 0;
+  }
+
+  .footer {
+    padding: 0 0 0 4%;
+  }
+  .footer .footer--section p {
+    padding: 20% 0 3% 0;
+  }
+  .footer .footer--section h2 {
+    width: 100%;
+    padding: 0 0 8% 0;
+  }
+  .footer .footer--section .icon--container {
+    text-align: center;
+  }
+  .footer .footer--section .icon--container img {
+    width: 50px;
+  }
+
+  .footer--bar {
+    align-items: baseline;
+    padding: 0 0 5% 0;
+  }
+  .footer--bar .footer--bar--left p {
+    display: inline-block;
   }
 }
 
