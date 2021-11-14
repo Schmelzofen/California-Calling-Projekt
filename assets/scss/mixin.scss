@@ -40,3 +40,12 @@
     -webkit-text-stroke: $ts;
     color: $c;
 }
+
+@mixin banner-animation($bg,$o,$w,$trans,$top,$anim){
+    background: $bg;
+    opacity: $o;
+    width: $w;
+    transform: $trans;
+    top: $top;
+    animation: $anim;
+}

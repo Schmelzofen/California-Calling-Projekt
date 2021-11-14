@@ -22,6 +22,13 @@ h1, h2{
     font-family: Larish-Semibold;
 }
 
+.btn{
+    @include button-style(1px solid white, transparent, white, 3vh, 2% 4%, pointer,.3s ease-in-out);
+    &:hover{
+        @include bg-color(white, black);
+    }
+}
+
 .header{
     text-align: center;
     @include bg-color(#000, #fff);
@@ -58,12 +65,6 @@ h1, h2{
         img{
             width: 4.5vw;
         }
-        .btn{
-            @include button-style(1px solid white, transparent, white, 3vh, 2% 4%, pointer,.3s ease-in-out);
-            &:hover{
-                @include bg-color(white, black);
-            }
-        }
     }
 }
 
@@ -80,8 +81,7 @@ h1, h2{
             background: url(../img/map.svg) right no-repeat;
             padding: 10% 1% 0% 0;
             p{
-                font-size: 2rem;
-                font-family: Work Sans;
+                @include text-style(Work Sans, 2rem);
             }
             h2{
                 font-size: 10rem;
@@ -121,10 +121,9 @@ h1, h2{
                 padding: 0 0 4% 0;
             }
             p{
+                @include text-style(Work Sans, 2.5vh);
                 width: 93%;
-                font-size: 2.5vh;
                 line-height: 5vh;
-                font-family: Work Sans;
             }
         }
         .image-text{
@@ -132,9 +131,8 @@ h1, h2{
             display: inline-flex;
             p{
                 @include text-style(Work Sans, 2.5vh);
-                width: 45%;
+                @include width-margin(45%, 3% 0 0 0);
                 padding: 0 0 0 8%;
-                margin-top: 3%;
                 line-height: 5vh;
             }
             img{
@@ -170,15 +168,13 @@ h1, h2{
             }
             div:nth-of-type(2){
                 p{
-                    font-family: Larish-Semibold;
                     &:nth-of-type(1){
                         width: 80%;
-                        font-size: 4.7vh;
+                        @include text-style(Larish-Semibold, 4.7vh);
                     }
                     &:nth-of-type(2){
+                        @include text-style(Work Sans, 3vh);
                         padding: 3% 0 0 0;
-                        font-size: 3vh;
-                        font-family: Work Sans;
                     }
                 }
             }
@@ -202,9 +198,7 @@ h1, h2{
         overflow: hidden;
         padding: 30% 0 0 9%;
         >p{
-            font-size: 3vh;
-            padding: 0 0 2% 0;
-            font-family: Work Sans;
+            @include text-style(Work Sans, 3vh);
         }
         > img{
             position: absolute;
@@ -229,16 +223,14 @@ h1, h2{
             div:nth-of-type(2){
                 padding: 0 0 5% 0;
                 p{
-                    font-family: Larish-Semibold;
                     &:nth-of-type(1){
                         width: 80%;
-                        font-size: 4.5vh;
+                        @include text-style(Larish-Semibold, 4.5vh);
                     }
                     &:nth-of-type(2){
+                        @include text-style(Work Sans, 3vh);
                         padding: 3% 0 0 0;
-                        font-size: 3vh;
                         margin-top: -1%;
-                        font-family: Work Sans;
                     }
                 }
             }
@@ -268,14 +260,9 @@ h1, h2{
             position: relative;
             z-index: 1;
             .banner-animation{
+                @include banner-animation(#fff, .9, 5000px, rotate(42deg) translate(0,155vh), -50vh, banner-animation 10s infinite linear alternate);
                 position: absolute;
-                background: #fff;
-                opacity: .9;
-                width: 5000px;
                 font-family: Larish-Semibold;
-                transform: rotate(42deg) translate(0, 155vh);
-                top: -50vh;
-                animation: banner-animation 10s infinite linear alternate;
                 span:nth-of-type(odd){
                     font-size: 20vh;
                     color: #000;
@@ -294,12 +281,6 @@ h1, h2{
             width: 40%;
             font-size: 6vh;
             padding: 0 0 2% 0;
-        }
-        .btn{
-            @include button-style(1px solid white, transparent, white, 3vh, 2% 4%, pointer, .3s ease-in-out);
-            &:hover{
-                @include bg-color(white, black);
-            }
         }
         .icon--container{
             padding: 9% 0 1% 0;
@@ -342,6 +323,24 @@ h1, h2{
     }
     100%{
         transform: rotate(42deg) translate(100vh,175vh);
+    }
+}
+
+@keyframes banner-animation3{
+    0%{
+        transform: translateX(-1%);
+    }
+    100%{
+        transform: translateX(-4%);
+    }
+}
+
+@keyframes banner-animation2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-7%);
     }
 }
 
@@ -526,14 +525,9 @@ h1, h2{
             }
             .banner-animation--container{
                 .banner-animation{
+                    @include banner-animation(#fff, .9, 5000px, translate(0,155vh), 5vh, banner-animation2 10s infinite linear alternate);
                     position: absolute;
-                    background: #fff;
-                    opacity: .9;
-                    width: 5000px;
                     font-family: Larish-Semibold;
-                    transform:translate(0, 155vh);
-                    top: 5vh;
-                    animation: banner-animation 10s infinite linear alternate;
                     span:nth-of-type(odd){
                         font-size: 5vh;
                         color: #000;
@@ -546,17 +540,9 @@ h1, h2{
             }
         }
     }
-    @keyframes banner-animation{
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(-7%);
-        }
-    }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
     .header .header-bar{
         padding: 0 0 10% 0;
         img{
@@ -598,29 +584,23 @@ h1, h2{
             }
             >img{
                 &:nth-of-type(1){
-                    width: 30%;
-                    margin: 5% 0 -18% 0%;
+                    @include width-margin(30%, 5% 0 -18% 0);
                 }
                 &:nth-of-type(2){
-                    width: 31%;
-                    margin: -158px 0 0 auto;
+                    @include width-margin(31%, -158px 0 0 auto);
                 }
                 &:nth-of-type(3){
-                    width: 38%;
-                    margin: 0 0 0 4%;
+                    @include width-margin(38%, 0 0 0 4%);
                 }
                 &:nth-of-type(4){
-                    width: 35%;
-                    margin: 0 11% 0 auto;
+                    @include width-margin(35%, 0 11% 0 auto);
                 }
             }
             .image-text img{
-                width: 47%;
-                height: 83%;
+                @include width-height(47%, 83%);
             }
             .last-image-container img{
-                width: 44%;
-                margin: 5% 0 0 6%;
+                @include width-margin(44%, 5% 0 0 6%);
             }
         }
         .poppy--bear > img{
@@ -659,14 +639,9 @@ h1, h2{
             }
             .banner-animation--container{
                 .banner-animation{
+                    @include banner-animation(#fff, .9, 5000px, translate(0,155vh), 5vh, banner-animation3 5s infinite linear alternate);
                     position: absolute;
-                    background: #fff;
-                    opacity: .9;
-                    width: 5000px;
                     font-family: Larish-Semibold;
-                    transform:translate(0, 155vh);
-                    top: 5vh;
-                    animation: banner-animation 5s infinite linear alternate;
                     span:nth-of-type(odd){
                         font-size: 10vh;
                         color: #000;
@@ -675,14 +650,6 @@ h1, h2{
                         @include text-stroke (1px black, white);
                         font-size: 10vh;
                     }
-                }
-            }
-            @keyframes banner-animation{
-                0%{
-                    transform: translateX(-1%);
-                }
-                100%{
-                    transform: translateX(-4%);
                 }
             }
         }
