@@ -7,6 +7,7 @@
   src: url(../font/LarishNeueSemibold.woff);
   font-family: Larish-Semibold2;
 }
+/* Sorry, Sensei for so much code. */
 * {
   padding: 0;
   margin: 0;
@@ -363,11 +364,11 @@ h1, h2 {
   }
 
   .header h1 {
-    font-size: 7vh;
+    font-size: 6vh;
     line-height: normal;
   }
   .header .outline {
-    font-size: 7vh;
+    font-size: 6vh;
   }
   .header .line img {
     height: 5vh;
@@ -409,7 +410,7 @@ h1, h2 {
     padding: 0;
   }
   .main .main--article .text-container {
-    width: 50%;
+    width: 100%;
   }
   .main .main--article .text-container h2 {
     font-size: 5vh;
@@ -418,6 +419,7 @@ h1, h2 {
   }
   .main .main--article .text-container p {
     text-align: center;
+    margin: auto;
   }
   .main .main--article .image-text {
     display: flex;
@@ -479,23 +481,62 @@ h1, h2 {
   .footer {
     padding: 0;
   }
-  .footer .footer--section p {
+  .footer .footer--section > p {
+    padding: 40% 0 3% 0;
     text-align: center;
   }
   .footer .footer--section h2 {
-    padding: 0% 3% 2% 3%;
+    padding: 0% 3% 10% 3%;
     text-align: center;
     width: 100%;
+    font-size: 3vh;
   }
   .footer .footer--section .btn {
-    margin: 35px 0 0 27.5vh;
+    display: block;
+    margin: 0 auto;
   }
   .footer .footer--section .footer--bar {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 0 70% 0;
+  }
+  .footer .footer--section .footer--bar .footer--bar--left p {
+    text-align: center;
+    font-size: 3vh;
+  }
+  .footer .footer--section .footer--bar--icons {
+    padding: 0;
   }
   .footer .footer--section .icon--container {
     text-align: center;
+  }
+  .footer .footer--section .banner-animation--container .banner-animation {
+    position: absolute;
+    background: #fff;
+    opacity: 0.9;
+    width: 5000px;
+    font-family: Larish-Semibold;
+    transform: translate(0, 155vh);
+    top: 5vh;
+    animation: banner-animation 10s infinite linear alternate;
+  }
+  .footer .footer--section .banner-animation--container .banner-animation span:nth-of-type(odd) {
+    font-size: 5vh;
+    color: #000;
+  }
+  .footer .footer--section .banner-animation--container .banner-animation .outline-two {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 5vh;
+  }
+
+  @keyframes banner-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-7%);
+    }
   }
 }
 
