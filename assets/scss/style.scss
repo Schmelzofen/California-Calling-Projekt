@@ -320,10 +320,10 @@ h1, h2{
 
 @keyframes banner-animation{
     0%{
-        transform: rotate(42deg) translate(0, 175vh);
+        transform: rotate(42deg) translate(0vh, 200vh);
     }
     100%{
-        transform: rotate(42deg) translate(100vh,175vh);
+        transform: rotate(42deg) translate(100vh,200vh);
     }
 }
 
