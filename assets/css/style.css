@@ -358,7 +358,7 @@ h1, h2 {
     transform: rotate(42deg) translate(100vh, 175vh);
   }
 }
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
   * {
     font-size: 62.5%;
   }
@@ -559,7 +559,7 @@ h1, h2 {
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header .header-bar {
     padding: 0 0 10% 0;
   }
