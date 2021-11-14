@@ -229,7 +229,6 @@ h1, h2 {
 }
 .main .poppy--bear .div--poppy {
   display: flex;
-  flex-wrap: wrap;
   padding: 0 0 10% 0;
 }
 .main .poppy--bear .div--poppy div:nth-of-type(1) {
@@ -417,6 +416,9 @@ h1, h2 {
     top: -4%;
   }
 
+  .div--golden, .div--poppy {
+    flex-wrap: wrap;
+  }
   .div--golden h2, .div--poppy h2 {
     padding: 0 0 5% 0;
   }
@@ -570,6 +572,7 @@ h1, h2 {
     padding: 30% 0 0 6%;
   }
   .main .poppy--bear .div--poppy {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
   }
